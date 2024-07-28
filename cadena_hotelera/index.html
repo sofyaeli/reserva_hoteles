@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los 3 mejores hoteles de Miami</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Miamihotel.com</h1>
+      </nav>
+      <div class="container image">
+        <div class="container2">
+          <h1>Busca hoteles en Miami con la mejor oferta</h1>
+          <form id="hotelForm">
+            <label for="customerTypeToggle">Tipo de Cliente:</label>
+            <div class="toggle-switch">
+              <input
+                type="checkbox"
+                id="customerTypeToggle"
+                name="customerTypeToggle"
+              />
+              <label
+                for="customerTypeToggle"
+                class="toggle-label"
+                id="toggleLabel"
+                >Regular</label
+              >
+            </div>
+            <br />
+            <div>
+              <label for="dates"
+                >Indica tus fechas para ver las ofertas y los precios más
+                recientes de nuestros hoteles</label
+              >
+            </div>
+            <br />
+            <div class="search">
+              <div class="search2">
+                <input
+                  type="text"
+                  id="dates"
+                  name="dates"
+                  class="icono"
+                  placeholder="Selecciona las fechas"
+                  readonly
+                />
+              </div>
+              <div class="button1">
+                <button type="submit">Buscar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <div>
+      <div id="result"></div>
+      <div id="hotelList"></div>
+
+      <h2>LA MEJOR CADENA DE HOTELES</h2>
+      <div id="hotelInfo"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="src/script.js"></script>
+  </body>
+  <footer>
+    <p>&copy; 2024 Sofy. Todos los derechos reservados.</p>
+    <p>Desarrollado por Sofy</p>
+    <p>Diseñado por Sofy</p>
+  </footer>
+</html>
